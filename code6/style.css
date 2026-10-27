@@ -1,74 +1,71 @@
-body {
+body{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.parent {
+.parent{
+    height: 550px;
     width: 400px;
-    height: 600px;
-    border: 2px solid grey;
+      background-color: rgb(72, 93, 112);   
+    display: flex;
     border-radius: 20px;
+    border: 3px solid black;
+   
+}   
+.left{
     display: flex;
-    overflow: hidden;
-}
-
-.left {
+    flex-direction: column;
     width: 300px;
-
-    display: flex;
-    flex-direction: column;
+  
 }
-
-.right {
-    width: 100px;
-    flex-direction: column;
+.top{
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.top {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
     flex: 1;
-    border-bottom: 1px solid black;
+    gap: 10px;
+      border-bottom: 2px solid wheat;
+    
 }
-
-.bottom {
+.bottom{
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
     flex: 1;
+    gap: 10px;
 }
-
-img {
+img{
     border-radius: 100%;
 }
-
-label {
-    margin-top: -390px;
-    margin-left: 60px;
+input{
+    height: 30px;
+    width: 60%;
+   border: 1px solid brown;
+    border-radius: 20px;
 }
-
-h1 {
-    transform: translateY(200px);
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
 }
-
-#close {
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+i{
+    transform: translateY(-140px);
+    margin-left: 50px;
+}
+#close{
     display: none;
 }
-
-body:has(#close:checked) .parent {
+body:has(#close:checked) .parent{
     display: none;
 }
-
-body:has(#close:checked) #close {
+body:has(#close:checked) #close{
     display: block;
 }
