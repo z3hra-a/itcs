@@ -1,0 +1,19 @@
+body{
+ height: 100vh;
+}
+.parent{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color:rgb(146, 147, 184); */
+    align-items: center;
+}
+
+.left p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.right {
+ display:flex;
+ gap: 15px;
+}
